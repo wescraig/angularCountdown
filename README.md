@@ -1,2 +1,2 @@
-# angularCountdown
+# Anticipate
 This is a countdown timer app built with AngularJS and Firebase.
