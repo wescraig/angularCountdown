@@ -1,0 +1,37 @@
+<div>
+	<!-- Add Header with user name-->
+
+	<div class = "userHomePage">
+		<div class = "userPageHeader">
+				<span class = "headerText">Anticipate</span>
+				<span class = "currentUser">{{currentUserName}}</span>
+		</div>
+		<div class = "userInfo">
+			<p class = "numOfEvents">You have {{eventsArray.length}} events that you're anticipating</p>
+			<div class = "navToEventPage">
+				<button class = "homePageBtn" type = "submit" ng-click = "toEventsPage()">Add Event</button>
+				<button class = "homePageBtn edit" type = "submit" ng-click = "editAndDelete()">{{editBtnText.btnText}}</button>
+			</div>
+		</div>
+
+		<div>
+			<div class = "eventLsHeaders">
+				<span class = "headerLeft">Event Name</span>
+				<span class = "headerRight">Event Date</span>
+			</div>
+			<ul id = "eventsList" style = "list-style: none; margin-left: 1%; margin-right: 3%; margin-top: 0;">
+				<li ng-repeat = "event in eventsArray">
+					<span style = "display: inline-block;"><input class = "deleteBox" type = "checkbox" style = "width: 20px; height: 20px;" ng-show = "editBtnText.toDelete"/></span>
+					<div ng-click = "viewEvent($index)" class = "eventsLi">
+						<span>{{event.eventName}}</span>
+						<span style = "float: right;">{{event.date}}</span>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+
+
+</div>

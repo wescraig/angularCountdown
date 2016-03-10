@@ -1,0 +1,333 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	overflow-x: hidden;
+	background: linear-gradient(#e6ffff, #1ab6ff);
+}
+#signUpLink{
+	font-family: inherit;
+	transition: color 0.3s linear, text-decoration 0.3s linear;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+#signUpLink:hover{
+	cursor: pointer;
+	text-decoration: underline;
+	color: #ff6600;
+}
+
+.timeSelect:hover{
+	cursor: pointer;
+}
+
+
+.eventsLi{
+	margin-bottom: 1.5%;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: #737373;
+    display: inline-block;
+    width: 87.5vw;
+    /*background: linear-gradient(#e6e6e6, #737373);*/
+    height: 34px;
+    padding: 15px 15px 0 15px;
+   	color: white;
+   	transition: box-shadow 0.2s linear, background-color 0.2s linear, color 0.2s linear, border-color 0.2s linear, font-weight 0.2s linear;
+}
+
+.eventsLi:hover{
+	cursor: pointer;
+	box-shadow: 6px 6px 3px #1a1a1a;
+	background-color: white;
+	font-weight: bold;
+	color: orange;
+	border-color: orange;
+
+}
+
+#signUpPage{
+	background: url(https://media.giphy.com/media/UknxX483P7qkE/giphy.gif) no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+}
+
+.header{
+	width: 100vw;
+    background: rgba(89, 89, 89, 0.5);
+    color: white;
+    font-size: 36px;
+    padding: 5px 0 5px 18px;
+    border-bottom: 1px solid white;
+    transition: background 0.2s linear, box-shadow 0.2s linear;
+
+}
+
+.header:hover{
+	background: rgba(89, 89, 89, 0.8);
+	box-shadow: 0 10px 10px -10px #9ecaed;
+}
+
+.headerText{
+	letter-spacing: 2px;
+
+}
+
+#infoBox{
+    display: block;
+    background: rgba(89, 89, 89, 0.5);
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 20%;
+    height: 315px;
+    margin-top: 10%;
+    margin-left: 38vw;
+    text-align: center;
+    padding: 1% 1% 0 1%;
+    color: white;
+    transition: background 0.2s linear, box-shadow 0.2s linear;
+
+}
+
+#infoBox:hover{
+	background: rgba(89, 89, 89, 0.8);
+	box-shadow: 0 0 10px #9ecaed;
+}
+
+.signInText{
+	color: white;
+	font-size: 20px;
+}
+
+.infoItem{
+    display: block;
+    height: 22px;
+    border-radius: 7px;
+    margin-left: 18%;
+    width: 63%;
+    padding: 6px;
+    font-size: 15px;
+    margin-top: 10%;
+}
+
+
+#signInBtn{
+	font-family: inherit;
+    margin-left: 5%;
+    border-radius: 4px;
+    width: 65px;
+    height: 35px;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    letter-spacing: 2px;
+    background: rgba(89, 89, 89, 0.5);
+    transition: background-color 0.3s linear, border-color 0.3s linear;
+    font-size: 15px;
+
+}
+
+.linkAndBtn{
+	margin-top: 10%;
+}
+
+#signInBtn:hover{
+	cursor: pointer;
+	background-color: white;
+	border-color: #ff6600;
+	color: #ff6600;
+
+}
+
+.signUpLink{
+	display: none;
+
+}
+
+/*UserHomePage styles*/
+.userPageHeader{
+	width: 100vw;
+    background: rgb(89, 89, 89);
+    color: white;
+    font-size: 36px;
+    padding: 5px 0 5px 18px;
+    border-bottom: 1px solid white;
+
+}
+
+.userHomePage{
+	background: linear-gradient(#e6ffff, #1ab6ff);
+	height: 100vh;
+}
+
+.currentUser{
+	font-size: 20px;
+	float: right;
+    margin-top: 0.75%;
+    margin-right: 4%;
+}
+
+.userInfo{
+	text-align: center;
+	width: 100vw;
+	padding-bottom: 3%;
+	border-bottom: 1px solid rgb(89,89,89);
+}
+
+.numOfEvents{
+	font-size: 35px;
+}
+
+.homePageBtn{
+	outline: none;
+    border-radius: 4px;
+    font-family: inherit;
+    height: 38px;
+    width: 115px;
+    margin-right: 2%;
+    font-size: 17px;
+    color: rgb(89,89,89);
+    border: 1px solid rgb(89,89,89);
+    background: linear-gradient(white, #cccccc);
+}
+
+.homePageBtn:hover{
+	background: linear-gradient(#cccccc, white);
+	cursor: pointer;
+}
+
+.edit{
+	margin-right: 0;
+}
+
+.eventLsHeaders{
+	width: 100vw;
+    height: 37px;
+    padding-top: 1%;
+
+}
+
+.eventLsHeaders>span{
+	font-size: 20px;
+	font-weight: 400;
+
+}
+
+.headerLeft{
+	float: left;
+	margin-left: 8%;
+	font-weight: bold;
+}
+
+.deleteBox{
+	width: 15px;
+	height: 15px;
+	transition: visibility 0.3s linear;	
+}
+
+.deleteBox:hover{
+	cursor: pointer;
+}
+
+.headerRight{
+	float: right;
+	margin-right: 9%;
+	font-weight: bold;
+}
+
+#eventPage{
+	height: 100vh;
+	background: linear-gradient(#e6ffff, #1ab6ff);
+	/*overflow-y: hidden;*/
+
+
+}
+
+#editEvent{
+	text-align: center;
+    width: 31vw;
+    height: 256px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background: rgba(89, 89, 89, 0.7);
+    margin-top: 15%;
+    margin-left: 35vw;
+    color: white;
+    transition: background 0.2s linear;
+
+}
+
+#editEvent:hover{
+	background: rgba(89, 89, 89, 0.8);
+	box-shadow: 0 0 10px #9ecaed;
+}
+
+.controlCenter{
+	margin-top: 7%;
+}
+
+.controlCenterBtn{
+	font-family: inherit;
+    margin-left: 5%;
+    border-radius: 4px;
+    width: 122px;
+    height: 35px;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    letter-spacing: 2px;
+    background: rgba(89, 89, 89, 0.5);
+    transition: background-color 0.3s linear, border-color 0.3s linear, font-weight 0.3s linear;
+    font-size: 15px;
+
+}
+
+.controlCenterBtn:hover{
+	cursor: pointer;
+	background-color: white;
+	border-color: #ff6600;
+	color: #ff6600;
+	font-weight: bold;
+}
+
+.eventInput{
+	border-radius: 4px;
+    width: 59%;
+    margin-top: 2%;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.timeInput{
+	width: 59px;
+    height: 35px;
+    font-size: 25px;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.timeInputTable{
+	background-color: white;
+	color: rgb(89,89,89);
+	transition: color 0.2s linear, font-weight 0.2s linear;
+}
+
+.timeInputTable tr td:hover{
+	font-weight: bold;
+	color: orange;
+}
+
+#picChoice{
+	margin-top: 23px;
+    margin-left: 8%;
+}
+
+#eventShow{
+    margin-top: 13%;
+    text-align: center;
+}
+

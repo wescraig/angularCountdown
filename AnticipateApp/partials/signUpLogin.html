@@ -1,0 +1,17 @@
+	<div id = "signUpPage">
+		<div class = "header">
+			<span class = "headerText">Anticipate</span>
+		</div>
+
+		<div id = "infoBox" ng-style = "infoBoxGrow">
+			<p class = "signInText">Login or sign up to start anticipating your favorite events.</p>
+			<input type = "text" class = "infoItem" placeholder = "User Name" ng-model = "userName"/>
+			<input id = "emailAddress" type = "email" class = "infoItem signUpLink" placeholder = "Email Address" ng-model = "email"/>
+			<input type = "password" class = "infoItem" placeholder = "Password" ng-model = "password"/>
+			<input id = "confirmPass" type = "password" class = "infoItem signUpLink" placeholder = "Confirm Password" ng-model = "cPassword"/>
+			<div class = "linkAndBtn">
+				<label id = "signUpLink"  ng-click = 'isNew()' style = "visibility: {{signUp.signUpLinkVisible}};">Sign Up</label>
+				<button id = "signInBtn" type = "submit" ng-click = 'createUser()' >{{signUp.btnText}}</button>
+			</div>
+		<div>
+	</div>

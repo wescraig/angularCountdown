@@ -1,0 +1,66 @@
+<div id = "eventPage">
+	<div class = "userPageHeader">
+				<span class = "headerText">Anticipate</span>
+				<span class = "currentUser">{{currentUserName}}</span>	
+	</div>
+	<div id = "eventShow" ng-show = "!isEdit">
+		<h2 style = "font-size: 40px;">{{eventName}}</h2>
+		<p style = "font-size: 29px;">IN</p>
+		<p style = "font-size: 30px;">{{mainTime}}</p>
+	</div>
+	<div id = "editEvent" ng-show = "isEdit">
+		<div>
+			<label style = "display: block;font-weight: bold;margin-top: 4%;letter-spacing: 2px;">Event Name</label>
+			<input id = "eventName" ng-model = "eventName" class = "eventInput">
+			<label style = "display: block;font-weight: bold; margin-top: 4%;letter-spacing: 2px;">Enter a Date</label>
+			<input id = "datePicker" type = "date" ng-model = "eventDate" class = "eventInput">
+		</div>
+
+		<div class = "controlCenter">
+		<button class = "controlCenterBtn" style = "margin-left: 3%;" type = "submit" ng-click = "showAddTime()">Add Time</button>
+		<button class = "controlCenterBtn" type = "submit" ng-click = "setMainTime()">Start Clock</button>
+<!-- 		<button class = "controlCenterBtn" type = "submit" ng-click = "uploadPic()">Add Picture</button> -->
+<!-- 		<div id = "addBgPic" style = "display: {{showPicAdd}}">
+			<input id = "picChoice" type = "file" accept = "image/*" onchange = "angular.element(this).scope().uploadPic()"></input>
+		</div> -->
+		<div>
+
+		<span style = "display: {{addTime}}; margin-top: 6%;">
+			<div>
+				<input class = "timeInput" type = "text" placeholder = "HH" id = "hours"  ng-focus = "showHh()" value = "{{evHr}}" >
+				<table class = "timeInputTable" style = "visibility: {{hoursShow}}; position: absolute;">
+					<tr ng-repeat = "item in hours"> 
+						<td ng-repeat = "time in item" ng-click = "addHr()" ng-blur = "hideHh()" class = "timeSelect">{{time}}</td>
+					</tr>
+				</table>
+			</div> <!-- do military time for hours, eliminate need for am/pm -->
+			<span style = "font-size: 25px;">:</span>	
+			<div>
+				<input class = "timeInput" type = "text" placeholder = "MM" id = "minutes"  ng-focus = "showMm()" value = "{{evMn}}"> 
+				<table class = "timeInputTable" style = "visibility: {{minShow}}; position: absolute;">
+					<tr ng-repeat = "item in min">
+						<td ng-repeat = "time in item" class = "timeSelect" ng-blur = "hideMm()" ng-click = "addMn()">{{time}}</td>
+					</tr>
+
+				</table>
+			</div>
+			<span style = "font-size: 25px;">:</span>
+			<div>
+				<input class = "timeInput" type = "text" placeholder = "SS" id = "seconds"  ng-focus = "showSs()" value = "{{evSc}}">
+				<table class = "timeInputTable" style = "visibility: {{secShow}}; position: absolute;">
+					<tr ng-repeat = "item in sec">
+						<td ng-repeat = "time in item" class = "timeSelect" ng-blur = "hideSs()" ng-click = "addSc()">{{time}}</td>
+					</tr>
+				</table>
+			</div>
+		</span>
+
+		
+	</div>
+
+
+
+
+
+
+</div>
